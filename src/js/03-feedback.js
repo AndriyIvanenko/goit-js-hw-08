@@ -35,6 +35,10 @@ function onFeedbackFormSubmit(event) {
   feedbackFormState = JSON.parse(localStorage['feedback-form-state']);
   console.log(feedbackFormState);
   localStorage.clear();
+  feedbackFormState.email = '';
+  feedbackFormState.message = '';
+  //   console.log(localStorage);
+  //   console.log(feedbackFormState);
   feedbackEmail.value = '';
   feedbackMessage.value = '';
 }
